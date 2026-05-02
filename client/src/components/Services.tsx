@@ -22,6 +22,8 @@ const services = [
       "The aobenz SINPIN Light Spot Essence (40ml) targets dark spots, freckles, and uneven skin tone. Formulated with multiple antioxidant properties to illuminate and reveal translucent, even skin. Visible results in as few as 5 uses.",
     image: AOBENZ_PRODUCT_IMG,
     features: ["Light Spot Formula", "Even Skin Tone", "Antioxidant Properties", "Illuminate Skin"],
+    price: 59.9,
+    originalPrice: 199.9,
     cta: "Order via WhatsApp",
     badge: "70% Off Today",
     bgColor: "#f7f9fc",
@@ -158,6 +160,19 @@ export default function Services() {
                 <p className="font-body text-sm text-[#2a2420]/60 leading-relaxed mb-5">
                   {service.description}
                 </p>
+
+                {/* Price Section */}
+                {service.price && (
+                  <div className="mb-6 pb-6 border-b border-[#e8d5cc]/40">
+                    <div className="flex items-baseline gap-3">
+                      <span className="font-display text-3xl font-bold text-[#c0392b]">${service.price}</span>
+                      {service.originalPrice && (
+                        <span className="font-body text-sm text-[#2a2420]/40 line-through">${service.originalPrice}</span>
+                      )}
+                    </div>
+                    <div className="font-body text-xs text-[#2a2420]/60 mt-1">Limited time offer • Free shipping included</div>
+                  </div>
+                )}
 
                 {/* Features */}
                 <div className="flex flex-wrap gap-2 mb-6">
