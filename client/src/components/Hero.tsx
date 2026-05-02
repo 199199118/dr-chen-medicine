@@ -10,6 +10,7 @@ import { ChevronDown } from "lucide-react";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663621481017/EaPJQiiDCiBxVQ5Gm69qgh/hero_bg-kBbxvrVBHaQ7TFabDcUyJ9.webp";
 const DOCTOR_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663621481017/EaPJQiiDCiBxVQ5Gm69qgh/doctor_portrait-i6hnYNw6v6iZguCfuuvATc.webp";
+const AOBENZ_PRODUCT_IMG = "/manus-storage/aobenz_product_45ae952f.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -79,9 +80,7 @@ export default function Hero() {
                 variants={fadeUp}
                 className="font-body text-base lg:text-lg text-white/80 leading-relaxed mb-8 max-w-md"
               >
-                Dark spots and uneven skin tone can come from many different causes.
-                Dr. Chen provides professional, personalized skincare solutions — 
-                with visible results in as few as 5 uses.
+                Introducing <strong className="text-[#e8d5cc]">aobenz SINPIN Radiance Essence</strong> — the professional brightening formula that targets dark spots, freckles, and uneven skin tone. Visible results in as few as 5 uses.
               </motion.p>
 
               {/* Stats Row */}
@@ -136,7 +135,7 @@ export default function Hero() {
               </motion.div>
             </div>
 
-            {/* Right: Doctor Portrait */}
+            {/* Right: Doctor Portrait + Product */}
             <div className="hidden lg:flex justify-end items-end h-screen pb-0 pr-0">
               <motion.div
                 initial={{ opacity: 0, x: 60, scale: 0.95 }}
@@ -155,6 +154,21 @@ export default function Hero() {
                       WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 8%, black 85%, transparent 100%)",
                     }}
                   />
+                  {/* Floating product card */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.85, y: 20 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 1.2 }}
+                    className="absolute top-24 -left-16 bg-white/95 backdrop-blur-sm rounded-2xl p-3 shadow-xl border border-[#e8d5cc]/50 w-36"
+                  >
+                    <img src={AOBENZ_PRODUCT_IMG} alt="aobenz SINPIN" className="w-full h-24 object-contain rounded-lg" />
+                    <div className="mt-2">
+                      <div className="font-display text-xs font-bold text-[#c0392b]">aobenz</div>
+                      <div className="font-body text-[10px] text-[#2a2420]/70 leading-tight">SINPIN Light Spot Essence</div>
+                      <div className="mt-1 inline-block bg-[#c0392b] text-white text-[9px] font-body font-bold px-2 py-0.5 rounded-full">70% OFF</div>
+                    </div>
+                  </motion.div>
+
                   {/* Floating credential card */}
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}

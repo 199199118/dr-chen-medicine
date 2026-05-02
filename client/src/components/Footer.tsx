@@ -20,8 +20,7 @@ export default function Footer() {
               <span className="font-display text-lg font-semibold text-white">Dr. Chen Medicine</span>
             </div>
             <p className="font-body text-sm leading-relaxed text-white/50 mb-6">
-              Professional skincare solutions for dark spots, hyperpigmentation, 
-              and uneven skin tone. FDA-certified products with real, visible results.
+              Powered by <strong className="text-white/70">aobenz SINPIN Radiance Essence</strong> — professional brightening formula for dark spots, freckles, and uneven skin tone. Real, visible results.
             </p>
             <div className="flex items-center gap-3">
               <a
@@ -81,7 +80,7 @@ export default function Footer() {
             <h4 className="font-body text-xs tracking-[0.2em] uppercase text-white/40 mb-5">Products</h4>
             <ul className="space-y-3">
               {[
-                "Anti-Spot Brightening Serum",
+                "aobenz SINPIN Radiance Essence",
                 "Vitamin C Brightening Complex",
                 "Free Skin Consultation",
                 "Photo Analysis Service",

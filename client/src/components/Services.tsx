@@ -1,30 +1,31 @@
 /**
  * Services Section — Dr. Chen Medicine
  * Style: 3-column card grid on cream background
- * Content: Anti-Spot Serum, Vitamin C Brightening, Free Skin Consultation
- * Design: Hover lift effect, product image, elegant typography
+ * Content: aobenz SINPIN Radiance Essence (real product), Vitamin C Brightening, Free Skin Consultation
+ * Design: Hover lift effect, real product image, elegant typography
+ * Brand: aobenz — white/red/blue clinical aesthetic
  */
 
 import { motion } from "framer-motion";
 import { ArrowRight, Truck, ShieldCheck, MessageCircle } from "lucide-react";
 
-const SERUM_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663621481017/EaPJQiiDCiBxVQ5Gm69qgh/serum_product-gHpBAroKytJZUBiEUWMKJ6.webp";
+const AOBENZ_PRODUCT_IMG = "/manus-storage/aobenz_product_45ae952f.jpg";
 const SKIN_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663621481017/EaPJQiiDCiBxVQ5Gm69qgh/skin_texture_bg-gcbJSZZ9izRxLrCofGM83x.webp";
 
 const services = [
   {
     id: 1,
     tag: "Best Seller",
-    title: "Anti-Spot Brightening Serum",
-    subtitle: "Apply once every night",
+    title: "aobenz SINPIN Radiance Essence",
+    subtitle: "Brightening & Freckle Removal",
     description:
-      "Our flagship FDA-certified serum targets dark spots, hyperpigmentation, and uneven skin tone. Visible results in as few as 5 uses. Formulated with Niacinamide, Tranexamic Acid & Licorice extract.",
-    image: SERUM_IMG,
-    features: ["FDA Certified", "5 uses to see results", "Free shipping"],
+      "The aobenz SINPIN Light Spot Essence (40ml) targets dark spots, freckles, and uneven skin tone. Formulated with multiple antioxidant properties to illuminate and reveal translucent, even skin. Visible results in as few as 5 uses.",
+    image: AOBENZ_PRODUCT_IMG,
+    features: ["Light Spot Formula", "Even Skin Tone", "Antioxidant Properties", "Illuminate Skin"],
     cta: "Order via WhatsApp",
     badge: "70% Off Today",
-    bgColor: "#fdf8f5",
-    accentColor: "#8b5e52",
+    bgColor: "#f7f9fc",
+    accentColor: "#c0392b",
   },
   {
     id: 2,
@@ -32,7 +33,7 @@ const services = [
     title: "Vitamin C Brightening Complex",
     subtitle: "Harness the power of nature",
     description:
-      "Take your skincare routine to new heights with the transformative power of Vitamin C. Brightens complexion, reduces freckles, and evens skin tone with consistent daily use.",
+      "Supercharge your brightening results with our Vitamin C booster — designed to complement the aobenz SINPIN Essence. Brightens complexion, reduces freckles, and evens skin tone with consistent daily use.",
     image: null,
     features: ["Natural ingredients", "Brightens complexion", "Reduces freckles"],
     cta: "Learn More",
@@ -46,7 +47,7 @@ const services = [
     title: "Professional Skin Analysis",
     subtitle: "Personalized consultation",
     description:
-      "Not sure what's causing your dark spots? Send Dr. Chen a clear close-up photo and receive a professional skin assessment. Understand your pigmentation type before choosing a product.",
+      "Not sure which product is right for you? Send Dr. Chen a clear close-up photo and receive a professional skin assessment. Understand your pigmentation type before choosing a treatment.",
     image: null,
     features: ["100% Free", "Expert advice", "WhatsApp response"],
     cta: "Send Your Photo",
@@ -71,7 +72,7 @@ export default function Services() {
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-10 h-px bg-[#8b5e52]" />
             <span className="font-body text-xs tracking-[0.2em] uppercase text-[#8b5e52] font-medium">
-              Our Services
+              Our Products
             </span>
             <div className="w-10 h-px bg-[#8b5e52]" />
           </div>
@@ -99,14 +100,14 @@ export default function Services() {
             >
               {/* Card top image/color area */}
               <div
-                className="relative h-52 overflow-hidden"
+                className="relative h-64 overflow-hidden"
                 style={{ backgroundColor: service.bgColor }}
               >
                 {service.image ? (
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-700 p-4"
                   />
                 ) : (
                   <div

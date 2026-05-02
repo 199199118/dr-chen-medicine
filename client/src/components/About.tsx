@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const DOCTOR_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663621481017/EaPJQiiDCiBxVQ5Gm69qgh/doctor_portrait-i6hnYNw6v6iZguCfuuvATc.webp";
+const AOBENZ_PRODUCT_IMG = "/manus-storage/aobenz_product_45ae952f.jpg";
 
 function useInView(threshold = 0.2) {
   const ref = useRef<HTMLDivElement>(null);
@@ -119,18 +120,35 @@ export default function About() {
                 pigmentation it may be.
               </p>
 
-              <p className="font-body text-base text-[#2a2420]/70 leading-relaxed mb-8">
+              <p className="font-body text-base text-[#2a2420]/70 leading-relaxed mb-6">
                 Dr. Chen Medicine was founded on the belief that everyone deserves 
-                personalized, professional skincare guidance. We combine FDA-certified 
-                formulations with the transformative power of Vitamin C and natural 
-                botanicals to deliver real, visible results.
+                personalized, professional skincare guidance. Our flagship product — 
+                the <strong className="text-[#c0392b] font-semibold">aobenz SINPIN Radiance Essence</strong> — combines multiple antioxidant 
+                properties with a targeted light spot formula to deliver real, visible results.
               </p>
+
+              {/* Product highlight strip */}
+              <div className="flex items-center gap-4 bg-white rounded-2xl p-4 mb-8 border border-[#e8d5cc]/60 shadow-sm">
+                <img src={AOBENZ_PRODUCT_IMG} alt="aobenz SINPIN" className="w-16 h-16 object-contain flex-shrink-0" />
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="font-display text-sm font-bold text-[#c0392b]">aobenz</span>
+                    <span className="bg-[#c0392b] text-white text-[9px] font-body font-bold px-2 py-0.5 rounded-full">SINPIN</span>
+                  </div>
+                  <div className="font-body text-xs text-[#2a2420]/70">Radiance Essence · Light Spot · 40ml</div>
+                  <div className="flex gap-2 mt-1.5">
+                    {["Brightening", "Freckle Removal", "Even Tone"].map(tag => (
+                      <span key={tag} className="text-[9px] font-body text-[#8b5e52] bg-[#8b5e52]/10 px-2 py-0.5 rounded-full">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
 
               {/* Key points */}
               <div className="space-y-4 mb-10">
                 {[
-                  { icon: "🧪", title: "FDA Certified", desc: "All products meet rigorous safety and efficacy standards" },
-                  { icon: "🌿", title: "Natural Ingredients", desc: "Vitamin C, botanicals, and skin-friendly actives" },
+                  { icon: "🧪", title: "FDA Certified Formula", desc: "aobenz SINPIN meets rigorous safety and efficacy standards" },
+                  { icon: "✨", title: "Multiple Antioxidants", desc: "Targets dark spots, freckles, and uneven skin tone" },
                   { icon: "📸", title: "Free Photo Analysis", desc: "Send a close-up photo for a professional skin assessment" },
                 ].map((item) => (
                   <div key={item.title} className="flex items-start gap-4">
