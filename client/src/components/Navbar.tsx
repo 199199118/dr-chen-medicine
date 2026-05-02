@@ -76,7 +76,7 @@ export default function Navbar() {
               </button>
             ))}
             <a
-              href="https://wa.me/message/DrChenMedicine"
+              href="https://wa.me/16267480352"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-[#25D366] text-white px-5 py-2 rounded-full text-sm font-medium font-body hover:bg-[#1da851] transition-colors duration-300 whatsapp-pulse"
@@ -119,7 +119,7 @@ export default function Navbar() {
                 </button>
               ))}
               <a
-                href="https://wa.me/message/DrChenMedicine"
+                href="https://wa.me/16267480352"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-[#25D366] text-white px-5 py-3 rounded-full text-sm font-medium font-body mt-2"

@@ -164,7 +164,7 @@ export default function About() {
               </div>
 
               <a
-                href="https://wa.me/message/DrChenMedicine"
+                href="https://wa.me/16267480352"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-[#8b5e52] text-white px-8 py-4 rounded-full font-body font-medium text-sm tracking-wide hover:bg-[#7a5248] transition-all duration-300 hover:scale-105 shadow-lg shadow-[#8b5e52]/30"

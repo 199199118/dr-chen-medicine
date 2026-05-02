@@ -116,7 +116,7 @@ export default function Hero() {
                 className="flex flex-col sm:flex-row gap-4"
               >
                 <a
-                  href="https://wa.me/message/DrChenMedicine"
+                  href="https://wa.me/16267480352"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-body font-medium text-sm tracking-wide hover:bg-[#1da851] transition-all duration-300 hover:scale-105 whatsapp-pulse shadow-lg shadow-green-900/30"

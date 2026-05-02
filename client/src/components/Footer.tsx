@@ -34,7 +34,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://wa.me/message/DrChenMedicine"
+                href="https://wa.me/16267480352"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#25D366] transition-colors duration-300"
@@ -87,7 +87,7 @@ export default function Footer() {
               ].map((product) => (
                 <li key={product}>
                   <a
-                    href="https://wa.me/message/DrChenMedicine"
+                    href="https://wa.me/16267480352"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-body text-sm text-white/50 hover:text-white transition-colors duration-200"

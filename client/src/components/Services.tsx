@@ -179,7 +179,7 @@ export default function Services() {
 
                 {/* CTA */}
                 <a
-                  href="https://wa.me/message/DrChenMedicine"
+                  href="https://wa.me/16267480352"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between w-full px-5 py-3 rounded-xl font-body text-sm font-medium transition-all duration-300 group/btn"

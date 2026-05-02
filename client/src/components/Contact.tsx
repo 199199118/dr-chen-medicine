@@ -91,7 +91,7 @@ export default function Contact() {
                     Send a message or photo for instant consultation
                   </div>
                   <a
-                    href="https://wa.me/message/DrChenMedicine"
+                    href="https://wa.me/16267480352"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-[#25D366] font-body text-sm font-medium mt-1 hover:underline"
@@ -249,7 +249,7 @@ export default function Contact() {
                 <p className="font-body text-xs text-[#2a2420]/40 text-center">
                   Or contact directly via{" "}
                   <a
-                    href="https://wa.me/message/DrChenMedicine"
+                    href="https://wa.me/16267480352"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#25D366] hover:underline"
